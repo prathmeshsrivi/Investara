@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="price.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+       
+    <main>
+        <div class="hero">
+            <h1>Welcome to Investara</h1>
+            <p>Simplifying Your Investment Journey</p>
+        </div>
+    </main>
+        <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+    "symbols": [
+      {
+        "description": "",
+        "proName": "NASDAQ:AAPL"
+      },
+      {
+        "description": "",
+        "proName": "NASDAQ:NFLX"
+      },
+      {
+        "description": "",
+        "proName": "NASDAQ:NVDA"
+      },
+      {
+        "description": "",
+        "proName": "NASDAQ:MSFT"
+      },
+      {
+        "description": "",
+        "proName": "MARKETSCOM:BITCOIN"
+      },
+      {
+        "description": "",
+        "proName": "EURONEXT:AAVE"
+      }
+    ],
+    "showSymbolLogo": true,
+    "isTransparent": true,
+    "displayMode": "adaptive",
+    "colorTheme": "dark",
+    "locale": "en"
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+        <div class="search-container">
+            <input type="text" id="searchBar" placeholder="Search for a company...">
+            <button onclick="searchCompany()">Search</button>
+        </div>
+        <section id="stock-data" class="stock-data-section">
+            <h2>Explore Stocks</h2>
+            <p>Search for your favorite company to get detailed analysis.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Stock Analysis. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
